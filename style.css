@@ -254,3 +254,9 @@ h1 {
 }
 
 .btn-add:hover { opacity: 0.85; }
+
+/* Responsive */
+@media (max-width: 400px) {
+  .balance-card h2 { font-size: 1.9rem; }
+  .summary { flex-direction: column; }
+}
