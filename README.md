@@ -1,7 +1,7 @@
 # 💰 Expense Tracker
 
 A clean, lightweight personal finance tracker that runs entirely in the browser — no installation, no backend, no sign-up required. Track your income and expenses in CFA francs, visualize your spending with a live doughnut chart, and keep a filtered transaction history — all data persisted locally in your browser.
-
+## Deployment link: https://expense-t-gamma.vercel.app/
 ---
 
 ## 📸 Preview
@@ -189,7 +189,7 @@ This project is open source and available under the [MIT License](./LICENSE).
 
 ## 🙋‍♂️ Author
 
-Built by **Roger** — a minimal, no-fluff personal finance tracker for everyday use.
+Built by **Kongnyu Roger** — a minimal, no-fluff personal finance tracker for everyday use.
 
 ---
 
