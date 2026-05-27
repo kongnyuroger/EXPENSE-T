@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+
+    <!-- Balance -->
+    <div class="balance-card">
+      <p class="label">Total Balance</p>
+      <h2 id="balance">$0.00</h2>
+    </div>
+
+    <!-- Income / Expense totals -->
+    <div class="summary">
+      <div class="summary-card income-card">
+        <p class="label">Income</p>
+        <p id="income-total" class="amount income-amount">$0.00</p>
+      </div>
+      <div class="summary-card expense-card">
+        <p class="label">Expenses</p>
+        <p id="expense-total" class="amount expense-amount">$0.00</p>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-wrapper">
+      <canvas id="myChart"></canvas>
+      <p id="chart-empty" class="chart-empty">No data to display yet.</p>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="income">Income</button>
+      <button class="filter-btn" data-filter="expense">Expenses</button>
+    </div>
+
+    <!-- Transaction list -->
+    <h3 class="section-title">History</h3>
+    <ul id="transaction-list"></ul>
+
+    <!-- Add transaction form -->
+    <h3 class="section-title">Add Transaction</h3>
+    <form id="transaction-form">
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" id="description" placeholder="e.g. Rent, Salary…" required />
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount <span class="hint">(negative = expense)</span></label>
+        <input type="number" id="amount" step="0.01" placeholder="e.g. -50 or 1200" required />
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" required />
+      </div>
+      <button type="submit" class="btn-add">Add Transaction</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
