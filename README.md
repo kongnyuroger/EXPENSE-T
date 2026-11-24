@@ -190,6 +190,7 @@ This project is open source and available under the [MIT License](./LICENSE).
 ## 🙋‍♂️ Author
 
 Built by **Kongnyu Roger Tafor** — a minimal, no-fluff personal finance tracker for everyday use.
+open for sugestions
 
 ---
 
